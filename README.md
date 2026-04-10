@@ -1,41 +1,68 @@
-🛒 E-Commerce Backend (Spring Boot)
-A backend REST API for an E-Commerce application built using Spring Boot MVC architecture. This project demonstrates how to design scalable backend services using modern Java technologies.
-🚀 Tech Stack
-Java
-Spring Boot (MVC)
-Spring Data JPA
-PostgreSQL
-Postman (API Testing)
-DTO Pattern (Data Transfer Object)
-📌 Features
-📦 Product Management (Create, Update, Delete, Fetch)
-🧾 Order Management System
-🔄 DTO-based data transfer (clean architecture)
-🗄️ Database integration with PostgreSQL
-🌐 RESTful API design
-🧪 API testing using Postman
-🏗️ Project Structure
+# 🛒 E-Commerce Backend (Spring Boot)
+
+A backend REST API for an E-Commerce application built using **Spring Boot MVC architecture**. This project demonstrates how to design scalable backend services using modern Java technologies.
+
+---
+
+## 🚀 Tech Stack
+
+- Java  
+- Spring Boot (MVC)  
+- Spring Data JPA  
+- PostgreSQL  
+- Postman (API Testing)  
+- DTO Pattern (Data Transfer Object)  
+
+---
+
+## 📌 Features
+
+- 📦 Product Management (Create, Update, Delete, Fetch)  
+- 🧾 Order Management System  
+- 🔄 DTO-based data transfer (clean architecture)  
+- 🗄️ Database integration with PostgreSQL  
+- 🌐 RESTful API design  
+- 🧪 API testing using Postman  
+
+---
+
+## 🏗️ Project Structure
 src/main/java/com/example/SpringEcom
 │
-├── controller     → Handles API requests
-├── service        → Business logic
-├── repo           → Database interaction (JPA)
-├── model          → Entity classes
-│   └── dto        → Request & Response DTOs
-⚙️ API Endpoints
-🛍️ Product APIs
-POST /product → Add new product
-PUT /product/{id} → Update product
-DELETE /product/{id} → Delete product
-GET /products → Get all products
-📦 Order APIs
-POST /orders/place → Place order
-GET /orders → Get all orders
-🧪 API Testing
-All APIs are tested using Postman.
-Postman helps simulate client requests and verify server responses without a frontend.
-🗄️ Database Configuration
-Make sure PostgreSQL is running and update your application.properties:
+├── controller → Handles API requests
+├── service → Business logic
+├── repo → Database interaction (JPA)
+├── model → Entity classes
+│ └── dto → Request & Response DTOs
+
+---
+
+## ⚙️ API Endpoints
+
+### 🛍️ Product APIs
+- POST `/product` → Add new product  
+- PUT `/product/{id}` → Update product  
+- DELETE `/product/{id}` → Delete product  
+- GET `/products` → Get all products  
+
+### 📦 Order APIs
+- POST `/orders/place` → Place order  
+- GET `/orders` → Get all orders  
+
+---
+
+## 🧪 API Testing
+
+All APIs are tested using **Postman**.  
+Postman helps send requests to the backend and check responses without a frontend.
+
+---
+
+## 🗄️ Database Configuration
+
+Update your `application.properties`:
+
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
