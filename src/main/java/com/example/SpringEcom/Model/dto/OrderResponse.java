@@ -9,6 +9,6 @@ public record OrderResponse(
         String email,
         String status,
         LocalDate orderDate,
-        List<OrderItemRequest> items
+        List<OrderItemResponse> items
 ) {
 }

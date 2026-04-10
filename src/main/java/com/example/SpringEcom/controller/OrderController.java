@@ -29,7 +29,7 @@ public class OrderController {
 
     @GetMapping("orders")
     public ResponseEntity<List<OrderResponse>> getAllOrders(){
-        List<OrderResponse> responses = orderService.getAllOrdersResponses();
+        List<OrderResponse> responses = orderService.getAllOrderResponses();
              return new ResponseEntity<>(responses,HttpStatus.OK);
 
     }
